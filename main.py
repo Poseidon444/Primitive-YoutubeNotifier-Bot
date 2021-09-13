@@ -49,6 +49,6 @@ async def on_ready():
 
 @client.command()
 async def ping(ctx):
-  await ctx.send(f"My ping is {round(client.latency)*1000}ms")
+  await ctx.send(f"My ping is {round(client.latency*1000)}ms")
 
 client.run(get("token","./bot.json"))
